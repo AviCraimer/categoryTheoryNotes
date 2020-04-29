@@ -1,0 +1,20 @@
+.pageLayout {
+    display: grid;
+    grid-template-columns:  1fr 250px ;
+    grid-gap: 15px;
+
+
+    .sideBar {
+        grid-column: -2 / -1;
+    }
+
+    main {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 15px;
+        margin-right: 0;
+    }
+
+
+}
+

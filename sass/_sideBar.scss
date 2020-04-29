@@ -1,0 +1,42 @@
+.sideBar {
+    .tableOfContents {
+        $marginStep: 20px;
+
+
+        &-scroll {
+            overflow-y: scroll;
+            position: fixed;
+            height: 100vh;
+        }
+
+        &-li {
+            padding-left: 5px;
+            color: #000000;
+            a {
+                color: #636363;
+                text-decoration: none;
+            }
+            &-level1 {
+                list-style-type: upper-roman;
+            }
+            &-level2 {
+                list-style-type: upper-alpha;
+                margin-left: $marginStep;
+            }
+            &-level3 {
+                list-style-type: decimal;
+                margin-left:  $marginStep * 2;
+            }
+            &-level4 {
+                list-style-type: lower-alpha;
+                margin-left:  $marginStep * 3;
+            }
+            &-level5 {
+                list-style-type: lower-roman;
+                margin-left:  $marginStep * 4;
+            }
+        }
+
+    }
+}
+
